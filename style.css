@@ -4,13 +4,13 @@
     --tertiary-green: #637D35;
     --white: #fefefe;
     --dark: #332a27;
-    --bg-light: #f5f3EF;
+    --light: #f5f3EF;
     --primary-font: 'Literata', 'Georgia', serif;
     --secondary-font: 'Poppins', 'Futura', 'Century Gothic', sans-serif;
 }
 
 body {
-    background-color: var(--bg-light);
+    background-color: var(--light);
     margin: 0 auto;
     padding: 0;
     font-family: var(--primary-font);
@@ -18,17 +18,18 @@ body {
 
 header {
     background-color: var(--primary-yellow);
-    padding: 24px 48px;
 }
 
 h1 {
     font-family: var(--primary-font);
     font-size: 80px;
-    font-weight: 700;
-    font-style: italic;
+    line-height: 80px;
+    font-weight: 800;
+    font-style: normal;
     letter-spacing: -3px;
     padding: 16px;
     color: var(--dark);
+    
 }
 
 h2 {
@@ -37,30 +38,84 @@ h2 {
     font-weight: 600;
     letter-spacing: -1px;
     padding: 16px;
-    color: var(--dark);
+    color: var(--dak);
 }
+/* media queries for scaling h1 & h2 sizes for mobile */
+@media (max-width: 490px) {
+    h1 {
+        font-size: 64px;
+        line-height: 64px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 399px) {
+    h1 {
+        font-size: 56px;
+        line-height: 64px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+}
+
 
 h3 {
     max-width: 640px;
     padding: 16px;
     color: var(--dark);
+    font-family: var(--secondary-font);
 }
 
 footer {
     text-align: center;
+    font-family: var(--secondary-font);
+    padding: 16px;
 }
 
 img.logo {
-    max-height: 104px;
+    max-height: 120px;
     transition: all 0.2s ease-in-out;
+
 }
 
 img.logo:hover {
-    border-bottom: 4px solid var(--tertiary-green);
-    padding-bottom: 8px;
+   opacity: 0.5;
 }
 
 img.logo:active {
-    scale: 0.95;
-    background-color: var(--tertiary-green);
+    background-color: var(--secondary-red);
+}
+
+.navbar {
+  background-color: var(--primary-yellow) !important;
+}
+
+/* Added custom image for hamburger menu toggler icon */
+.navbar-toggler-icon {
+    background-image: url(./images/toggle-icon.png);
+}
+
+.nav-link {
+    color: var(--dark);
+    font-size: 24px;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: var(--secondary-red);
+    border-bottom: 1px solid var(--secondary-red);
+}
+
+.nav-link:active {
+    color: var(--secondary-red);
+    font-weight: 900;
+}
+
+/* Media query to centre align toggle icon in mobile view */
+@media (max-width: 450px) {
+    .navbar-toggler {
+        margin: 0 auto;
+    }
 }
