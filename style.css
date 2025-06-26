@@ -269,3 +269,32 @@ img.logo:active {
 .carousel-inner {
     border-radius: 20px;
 }
+
+/* Accordion classes */
+#accordion {
+    border-radius: 40px;
+}
+
+
+.accordion-header {
+    font-size: 24px !important;
+    font-weight: 900 !important;
+    font-family: var(--secondary-font);
+    border-radius: 20px;
+}
+
+.accordion-button {
+    color: var(--secondary-red);
+    background-color: var(--white);
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--dark);
+    background-color: var(--white);
+    border-top: 1px solid var(--secondary-red)!important;
+}
+
+.accordion-body {
+    padding-left: 32px;
+    max-width: 600px;
+}
