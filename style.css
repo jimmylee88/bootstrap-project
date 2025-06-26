@@ -166,6 +166,7 @@ img.logo:active {
     border-radius: 20px;
     box-shadow: 4px 4px 16px var(--shadow);
     margin: 0 auto;
+    margin-bottom: 56px;
 }
 
 .booking h3 {
@@ -257,6 +258,10 @@ img.logo:active {
     .hero-image {
         max-width: 280px;
     }
+}
+
+#gallery h2 {
+    margin-bottom: -32px;
 }
 
 #carouselExampleIndicators {
