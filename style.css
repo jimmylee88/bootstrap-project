@@ -39,7 +39,7 @@ h2 {
     font-weight: 600;
     letter-spacing: -1px;
     padding: 16px;
-    color: var(--dak);
+    color: var(--secondary-red);
 }
 
 h3 {
@@ -88,6 +88,7 @@ h3 {
     padding: 16px;
     color: var(--dark);
     font-family: var(--secondary-font);
+    font-weight: 300;
 }
 
 footer {
@@ -147,18 +148,79 @@ img.logo:active {
 }
 
 .hero-title {
-    margin-bottom: 40px;
+    margin-bottom: 16px;
+}
+
+.hero-intro {
+   margin-bottom: 16px;
+   margin-top: 24px;
+}
+
+/* Booking Section */
+.booking {
+    max-width: 500px;
+    background-color: var(--white);
+    padding: 8px 16px 32px 16px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 16px var(--shadow);
+    margin: 0 auto;
+}
+
+.booking h3 {
+    text-align: center;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    color: var(--dark);
+}
+
+/* Pseudo element for booking heading */
+.booking h3:before {
+    content:'🍷';
+    margin-right: 8px;
+}
+
+/* Buttons for booking section */
+.btn {
+    font-family: var(--secondary-font);
+    border-radius: 40px; 
+    transition: all 0.1s ease-in-out;
+}
+
+.btn:active {
+    scale: 0.95
+}
+
+.btn-primary {
+    background-color: var(--secondary-red) !important;
+    border-color: var(--secondary-red) !important;   
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-yellow) !important;
+    color: var(--dark);
+    border-color: var(--secondary-red) !important;
+    box-shadow: 4px 4px 16px var(--shadow);      
+}
+
+.btn-primary:focus {
+    box-shadow: 4px 4px 16px var(--shadow) !important;   
+}
+
+.btn-primary:active {
+    background-color: var(--primary-yellow) !important;
+    color: var(--dark);
+    border-color: var(--secondary-red) !important;
+    box-shadow: 4px 4px 16px var(--shadow) !important; 
 }
 
 .hero-image {
     max-width: 600px;
     border-radius: 30px;
     margin: 16px;
-    padding: 8px;
     background-color: var(--white);
     box-shadow: 4px 4px 16px var(--shadow);
 }
-
+/* I spent way too long testing out these different breakpoints to see how the image scales. There's definitely a smarter way of doing this! */
 @media (max-width:1199px) {
     .hero-image {
         max-width: 500px;
@@ -194,4 +256,3 @@ img.logo:active {
         max-width: 280px;
     }
 }
-/* I spent way too long testing out these different breakpoints to see how the image scales. There's definitely a smarter way of doing this! */
