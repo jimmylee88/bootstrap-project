@@ -1,8 +1,8 @@
 # bootstrap-project
-Week 3 bootstrap project - responsive HTML &amp; CSS
+Week 3 bootstrap project - responsive HTML &amp; CSS using
 
 ## Github Page
-
+https://jimmylee88.github.io/bootstrap-project/ 
 
 ## About
 This is my submission for the bootstrap project this week.
