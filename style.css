@@ -30,7 +30,7 @@ h1 {
     letter-spacing: -3px;
     padding: 16px;
     color: var(--dark);
-    
+    margin-bottom: -16px;
 }
 
 h2 {
@@ -40,6 +40,7 @@ h2 {
     letter-spacing: -1px;
     padding: 16px;
     color: var(--secondary-red);
+    font-style: italic;
 }
 
 h3 {
@@ -149,11 +150,11 @@ img.logo:active {
 }
 
 .hero-title {
-    margin-bottom: 16px;
+    margin-bottom: 56px;
 }
 
 .hero-intro {
-   margin-bottom: 16px;
+   margin-bottom: 56px;
    margin-top: 24px;
 }
 
@@ -259,9 +260,10 @@ img.logo:active {
 }
 
 #carouselExampleIndicators {
-    margin-top: 40px;
+    margin: 80px 0 80px 0;
     background-color: var(--light);
-    padding: 16px;
+    box-shadow: 4px 4px 16px var(--shadow);
+    border-radius: 20px;
 }
 
 .carousel-inner {
