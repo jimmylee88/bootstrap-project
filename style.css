@@ -145,6 +145,7 @@ img.logo:active {
 
 .hero {
     margin-top: 24px;
+    margin-bottom: 56px;;
 }
 
 .hero-title {
@@ -255,4 +256,14 @@ img.logo:active {
     .hero-image {
         max-width: 280px;
     }
+}
+
+#carouselExampleIndicators {
+    margin-top: 40px;
+    background-color: var(--light);
+    padding: 16px;
+}
+
+.carousel-inner {
+    border-radius: 20px;
 }
