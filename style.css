@@ -5,7 +5,7 @@
     --white: #fefefe;
     --dark: #332a27;
     --light: #f5f3EF;
-    --primary-font: 'Literata', 'Georgia', serif;
+    --primary-font: 'Merriweather', 'Georgia', serif;
     --secondary-font: 'Poppins', 'Futura', 'Century Gothic', sans-serif;
     --shadow: rgba(51, 42, 39, 0.2);
 }
@@ -39,9 +39,8 @@ h1 {
     font-family: var(--primary-font);
     font-size: 80px;
     line-height: 80px;
-    font-weight: 800;
+    font-weight: 900;
     font-style: normal;
-    letter-spacing: -3px;
     padding: 16px;
     color: var(--dark);
     margin-bottom: -16px;
@@ -51,10 +50,9 @@ h2 {
     font-family: var(--primary-font);
     font-size: 56px;
     font-weight: 600;
-    letter-spacing: -1px;
     padding: 16px;
     color: var(--secondary-red);
-    font-style: italic;
+    font-style: normal;
 }
 
 h3 {
