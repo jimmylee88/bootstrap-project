@@ -295,15 +295,12 @@ img.logo:active {
 
 /* Accordion classes */
 
-.accordion-header {
-    font-size: 24px !important;
-    font-weight: 900 !important;
-    font-family: var(--secondary-font);
-}
-
 .accordion-button {
     color: var(--secondary-red);
     background-color: var(--white);
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    font-family: var(--secondary-font);
 }
 
 .accordion-button:not(.collapsed) {
@@ -316,3 +313,8 @@ img.logo:active {
     padding-left: 32px;
     max-width: 600px;
 }
+
+/* Overrides the baked-in blue arrow icon*/
+.accordion-button:not(.collapsed)::after {
+    background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxNiAxNicgZmlsbD0nIzIxMjUyOSc+PHBhdGggZmlsbC1ydWxlPSdldmVub2RkJyBkPSdNMS42NDYgNC42NDZhLjUuNSAwIDAgMSAuNzA4IDBMOCAxMC4yOTNsNS42NDYtNS42NDdhLjUuNSAwIDAgMSAuNzA4LjcwOGwtNiA2YS41LjUgMCAwIDEtLjcwOCAwbC02LTZhLjUuNSAwIDAgMSAwLS43MDh6Jy8+PC9zdmc+);
+    transform: rotate(-180deg)!important;}
