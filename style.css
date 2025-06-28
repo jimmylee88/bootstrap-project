@@ -306,7 +306,7 @@ img.logo:active {
 .accordion-button:not(.collapsed) {
     color: var(--dark);
     background-color: var(--white);
-    border-top: 1px solid var(--secondary-red)!important;
+    border-top: 1px solid var(--primary-yellow)!important;
 }
 
 .accordion-body {
@@ -318,3 +318,9 @@ img.logo:active {
 .accordion-button:not(.collapsed)::after {
     background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHZpZXdCb3g9JzAgMCAxNiAxNicgZmlsbD0nIzIxMjUyOSc+PHBhdGggZmlsbC1ydWxlPSdldmVub2RkJyBkPSdNMS42NDYgNC42NDZhLjUuNSAwIDAgMSAuNzA4IDBMOCAxMC4yOTNsNS42NDYtNS42NDdhLjUuNSAwIDAgMSAuNzA4LjcwOGwtNiA2YS41LjUgMCAwIDEtLjcwOCAwbC02LTZhLjUuNSAwIDAgMSAwLS43MDh6Jy8+PC9zdmc+);
     transform: rotate(-180deg)!important;}
+
+/* overrides default blue border on focus */
+button.accordion-button:focus{
+    outline: 2px solid var(--primary-yellow);
+    box-shadow: 1px 1px 4px var(--shadow);
+}
