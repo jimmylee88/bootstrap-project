@@ -324,3 +324,18 @@ button.accordion-button:focus{
     outline: 2px solid var(--primary-yellow);
     box-shadow: 1px 1px 4px var(--shadow);
 }
+
+.card {
+    border-radius: 20px;
+    box-shadow: 4px 4px 16px var(--shadow);
+}
+
+.card img {
+    border-radius: 10px;
+}
+
+.rounded-start {
+    border-bottom-left-radius: 10px !important;
+    border-top-left-radius: 10px !important;
+}
+
