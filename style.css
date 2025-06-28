@@ -328,14 +328,19 @@ button.accordion-button:focus{
 .card {
     border-radius: 20px;
     box-shadow: 4px 4px 16px var(--shadow);
+    padding: 16px;
 }
 
 .card img {
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 
-.rounded-start {
-    border-bottom-left-radius: 10px !important;
-    border-top-left-radius: 10px !important;
+.card-body{
+    padding: 32px;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
+#about {
+    margin-bottom: 56px;
+}
