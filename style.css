@@ -143,6 +143,11 @@ img.logo:active {
     background-image: url(./images/toggle-icon.png);
 }
 
+.navbar-toggler:focus {
+    box-shadow: 0 0 0px 4px var(--secondary-red);
+    padding: 16px;
+}
+
 .nav-link {
     color: var(--dark);
     font-size: 24px;
